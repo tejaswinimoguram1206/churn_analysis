@@ -12,8 +12,7 @@ db_customer: Demographic details including customerid, name, country, state, gen
 db_subscription: Plan configurations including subscription_start_date, subscription_type, renewal_date, plan_type (Basic/Standard/Premium), contract_type, cancellation_date, cancellation_reason, monthly_charges, cltv, and churn_score.  
 db_support: Escalation data including complaint_date, escalations, csat_score, and customer feedback.  
 # Key Metrics & Formulas Implemented
-Churn Rate: $\frac{\text{Churned Customers}}{\text{Total Customers}}$ 
-Retention Rate: $1 - \text{Churn Rate}$  Average Revenue Per User (ARPU): $\frac{\sum(\text{Monthly Charges})}{\text{Active Customers}}$  Average Customer Tenure: $\text{AVG}(\text{DATEDIFF}(\text{cancellation\_date OR NOW()}, \text{subscription\_start\_date}))$  Revenue at Risk: $\sum(\text{Monthly Charges}) \text{ WHERE } \text{churn\_score} > 70$  Escalation Rate: $\frac{\sum(\text{Escalations})}{\text{COUNT}(\text{Complaints})} \times 100$  
+ 
 
 # Key Insights & Analytics Findings
 Overall Churn Profile: The platform exhibits an overall 28.6% Churn Rate (71.4% Retention Rate). 
